@@ -88,6 +88,8 @@ $hotels = [
 
                 <?php if (!isset($_GET['parking']) || $elem['parking'] == true){ ?>    
 
+                <?php if (isset($_GET['vote']) && $elem['vote'] >= $_GET['vote']){ ?> 
+
                 <tr>
                     <td><?php echo $elem['name']; ?></td>
                     <td><?php echo $elem['description']; ?></td> 
@@ -95,6 +97,8 @@ $hotels = [
                     <td><?php echo $elem['vote']; ?></td>
                     <td><?php echo $elem['distance_to_center'] . ' km'; ?></td>
                 </tr>
+
+                <?php } ?>
 
                 <?php } ?>
 
