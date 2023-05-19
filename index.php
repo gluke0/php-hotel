@@ -53,7 +53,7 @@ $hotels = [
 </head>
 <body>
 
-<div>
+    <div>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -74,9 +74,9 @@ $hotels = [
                     <td><?php echo $elem['description']; ?></td> 
                     <td><?php echo $elem['parking'] ? 'Si' : 'No'; ?></td> 
                     <td><?php echo $elem['vote']; ?></td>
-                    <td><?php echo $elem['distance_to_center']; ?></td>
+                    <td><?php echo $elem['distance_to_center'] . ' km'; ?></td>
                 </tr>
-                
+
                 <?php } ?>
 
             </tbody>
