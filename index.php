@@ -55,9 +55,15 @@ $hotels = [
 
     <div class="p-4">
         <form method="GET" class="ms-5">
-            <div class="form-check">
-                <input class="form-check-input" type="checkbox" name="parking" id="parking"> 
-                <label class="form-check-label text-uppercase" for="parking"> mostra gli hotel con parcheggio </label> 
+
+            <div class="form-check d-flex align-items-center">
+                <input class="form-check-input" type="checkbox" name="parking" id="parking" style="width: 3%; height: 30px"> 
+                <label class="form-check-label text-uppercase ms-2" for="parking"> mostra gli hotel con parcheggio </label> 
+            </div>
+
+            <div class="form-check d-flex align-items-center">
+                <input class="form-check-input" type="number" name="vote" id="vote" min="1" max="5" placeholder="Inserisci un voto da 1 a 5" style="width: 3%; height: 30px">
+                <label class="form-check-label text-uppercase ms-2" for="vote"> scegli le stelle </label>
             </div>
            
             <button type="submit" class="btn btn-primary text-uppercase mt-3"> mostra </button>
