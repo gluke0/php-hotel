@@ -80,6 +80,8 @@ $hotels = [
 
                 <?php foreach ($hotels as $elem){ ?>
 
+                <?php if (!isset($_GET['parking']) || $elem['parking'] == true){ ?>    
+
                 <tr>
                     <td><?php echo $elem['name']; ?></td>
                     <td><?php echo $elem['description']; ?></td> 
@@ -87,6 +89,8 @@ $hotels = [
                     <td><?php echo $elem['vote']; ?></td>
                     <td><?php echo $elem['distance_to_center'] . ' km'; ?></td>
                 </tr>
+
+                <?php } ?>
 
                 <?php } ?>
 
