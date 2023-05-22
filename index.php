@@ -53,6 +53,8 @@ $hotels = [
 </head>
 <body class="bg-light">
 
+    <h1 class="text-center mt-3 text-primary"><strong> Hotels </strong></h1>
+
     <div class="p-4">
         <form method="GET" class="ms-5">
 
@@ -62,7 +64,7 @@ $hotels = [
             </div>
 
             <div class="form-check d-flex align-items-center">
-                <input class="form-check-input" type="number" name="vote" id="vote" min="1" max="5" placeholder="Inserisci un voto da 1 a 5" style="width: 3%; height: 30px">
+                <input class="form-check-input" type="number" name="vote" id="vote" min="1" max="5" placeholder="Scegli un voto da 1 a 5" style="width: 3%; height: 30px">
                 <label class="form-check-label text-uppercase ms-2" for="vote"> scegli le stelle </label>
             </div>
            
